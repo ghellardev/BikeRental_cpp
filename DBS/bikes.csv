@@ -1,31 +1,31 @@
-0,test,test2,0,0.00,test,0
-1,Trek,FX 1,2020,5.00,New York,0
-2,Specialized,Sirrus X 2.0,2021,6.00,Los Angeles,0
-3,Giant,Escape 3,2019,4.00,Chicago,0
-4,Cannondale,Quick CX 4,2018,7.00,Miami,0
-5,Scott,Sub Cross 40,2022,8.00,San Francisco,0
-6,Schwinn,Discover,2017,3.00,Seattle,453968023
-7,Marin,Presidio 1,2020,5.00,Portland,1798223936
-8,Bianchi,Via Nirone 7,2018,6.00,Austin,1798224559
-9,Raleigh,Cadent 2,2019,4.00,Denver,1798233176
-10,Fuji,Absolute 1.9,2021,6.00,Boston,82975632
-11,Orbea,Carpe 40,2018,5.00,Atlanta,296
-12,Kona,Dew,2020,4.00,Dallas,82975632
-13,Cube,Travel,2019,5.00,Houston,2010572560
-14,Mongoose,Banana,2018,3.00,Phoenix,2010667040
-15,Pure Cycles,Classic,2021,4.00,San Diego,0
-16,Salsa,Journeyman,2020,7.00,Minneapolis,0
-17,KHS,Urban Xpress,2019,5.00,Detroit,0
-18,Carrera,Crossfire 2,2017,4.00,Philadelphia,0
-19,Breezer,Downtown EX,2022,6.00,San Antonio,0
-20,Dahon,Mariner D8,2018,3.00,Las Vegas,0
-21,GT,Avalanche,2019,5.00,Charlotte,0
-22,Electra,Townie,2021,6.00,Indianapolis,0
-23,Jamis,Coda S2,2020,4.00,Columbus,0
-24,Polygon,Path 3,2018,7.00,San Jose,0
-25,Diamondback,Insight 2,2017,4.00,Washington D.C.,0
-26,Cervelo,Caledonia-5,2021,8.00,Memphis,1798227240
-27,BMC,Roadmachine,2020,9.00,Nashville,-1819463680
-28,Surly,Straggler,2019,7.00,Oklahoma City,1798227496
-29,Colnago,Concept,2018,10.00,Jacksonville,16800
-30,Pinarello,Prince FX,2022,11.00,El Paso,-1823037652
+0,test,test2,0,0.000000,test,0
+2,Specialized,Sirrus X 2.0,2021,6.000000,Los Angeles,0
+3,Giant,Escape 3,2019,4.000000,Chicago,0
+4,Cannondale,Quick CX 4,2018,7.000000,Miami,0
+5,Scott,Sub Cross 40,2022,8.000000,San Francisco,0
+6,Schwinn,Discover,2017,3.000000,Seattle,0
+7,Marin,Presidio 1,2020,5.000000,Portland,0
+8,Bianchi,Via Nirone 7,2018,6.000000,Austin,0
+9,Raleigh,Cadent 2,2019,4.000000,Denver,0
+10,Fuji,Absolute 1.9,2021,6.000000,Boston,0
+11,Orbea,Carpe 40,2018,5.000000,Atlanta,0
+12,Kona,Dew,2020,4.000000,Dallas,0
+13,Cube,Travel,2019,5.000000,Houston,0
+14,Mongoose,Banana,2018,3.000000,Phoenix,0
+15,Pure Cycles,Classic,2021,4.000000,San Diego,0
+16,Salsa,Journeyman,2020,7.000000,Minneapolis,0
+17,KHS,Urban Xpress,2019,5.000000,Detroit,0
+18,Carrera,Crossfire 2,2017,4.000000,Philadelphia,0
+19,Breezer,Downtown EX,2022,6.000000,San Antonio,0
+20,Dahon,Mariner D8,2018,3.000000,Las Vegas,0
+21,GT,Avalanche,2019,5.000000,Charlotte,0
+22,Electra,Townie,2021,6.000000,Indianapolis,0
+23,Jamis,Coda S2,2020,4.000000,Columbus,0
+24,Polygon,Path 3,2018,7.000000,San Jose,0
+25,Diamondback,Insight 2,2017,4.000000,Washington D.C.,0
+26,Cervelo,Caledonia-5,2021,8.000000,Memphis,0
+27,BMC,Roadmachine,2020,9.000000,Nashville,0
+28,Surly,Straggler,2019,7.000000,Oklahoma City,0
+29,Colnago,Concept,2018,10.000000,Jacksonville,0
+30,Pinarello,Prince FX,2022,11.000000,El Paso,0
+1,Brand,Model,2020,15.000000,Location,1

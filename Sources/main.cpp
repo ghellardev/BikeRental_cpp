@@ -10,6 +10,7 @@ int main(int argc, char *argv[]) {
         cerr << "Usage: " << argv[0] << " <operation>\n";
         cerr << "Operations:\n";
         cerr << "add <id> <brand> <model> <year> <price_per_hour> <location> <available>\n";
+        cerr << "add <id> <brand> <model> <year> <price_per_hour> <location>\n";
         cerr << "display\n";
         cerr << "update <id> <brand> <model> <year> <price_per_hour> <location> <available>\n";
         cerr << "delete <id>\n";
@@ -22,7 +23,7 @@ int main(int argc, char *argv[]) {
 
     const string operation = argv[1];
     if (operation == "add" && argc == 9) {
-        Bike newBike(
+        bikeRentalSystem.addBike(
                 stoi(argv[2]),
                 argv[3],
                 argv[4],
@@ -31,7 +32,15 @@ int main(int argc, char *argv[]) {
                 argv[7],
                 static_cast<bool>(stoi(argv[8]))
         );
-        bikeRentalSystem.addBike(newBike);
+    } else if (operation == "add" && argc == 8) {
+        bikeRentalSystem.addBike(
+                stoi(argv[2]),
+                argv[3],
+                argv[4],
+                stoi(argv[5]),
+                stof(argv[6]),
+                argv[7]
+        );
     } else if (operation == "display" && argc == 2) {
         bikeRentalSystem.displayBikes();
     } else if (operation == "update" && argc == 9) {

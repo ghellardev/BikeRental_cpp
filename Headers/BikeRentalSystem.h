@@ -21,6 +21,9 @@ public:
     BikeRentalSystem();
 
     void addBike(const Bike &newBike);
+    void addBike(int id, const string &brand, const string &model, int year, float price_per_hour, const string &location, bool available);
+    void addBike(int id, const string &brand, const string &model, int year, float price_per_hour, const string &location);
+
     void displayBikes() const;
     void updateBike(int id, const Bike &updatedBike);
     void deleteBike(int id);
@@ -119,6 +122,14 @@ void BikeRentalSystem::addBike(const Bike &newBike) {
     bikes.push_back(newBike);
     saveBikesToFile();
     cout << "Bike added successfully.\n";
+}
+
+void BikeRentalSystem::addBike(int id, const string &brand, const string &model, int year, float price_per_hour, const string &location, bool available) {
+    addBike(Bike(id, brand, model, year, price_per_hour, location, available));
+}
+
+void BikeRentalSystem::addBike(int id, const string &brand, const string &model, int year, float price_per_hour, const string &location) {
+    addBike(Bike(id, brand, model, year, price_per_hour, location, true));
 }
 
 void BikeRentalSystem::displayBikes() const {
