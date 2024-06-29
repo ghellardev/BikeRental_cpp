@@ -1,37 +1,30 @@
 #include "Bike.h"
+#include <filesystem>
 
 using namespace std;
+
 #define MAX_BIKES 100
 
 #ifndef UNTITLED5_BIKERENTALSYSTEM_H
 #define UNTITLED5_BIKERENTALSYSTEM_H
-
 
 class BikeRentalSystem {
 private:
     vector<Bike> bikes;
 
     void readBikesFromFile();
-
     void saveBikesToFile() const;
-
     static Bike parseBike(const string &line);
-
     static string bikeToString(const Bike &bike);
 
 public:
     BikeRentalSystem();
 
     void addBike(const Bike &newBike);
-
     void displayBikes() const;
-
     void updateBike(int id, const Bike &updatedBike);
-
     void deleteBike(int id);
-
     void rentBike(int id);
-
     void returnBike(int id);
 };
 
@@ -40,9 +33,14 @@ BikeRentalSystem::BikeRentalSystem() {
 }
 
 void BikeRentalSystem::readBikesFromFile() {
+    if (!std::__fs::filesystem::exists("DBS")) {
+        cerr << "Directory DBS does not exist. Creating directory.\n";
+        std::__fs::filesystem::create_directory("DBS");
+    }
+
     ifstream file("DBS/bikes.csv");
     if (!file.is_open()) {
-        cerr << "File not found or empty.\n";
+        cerr << "File not found or could not be opened.\n";
         return;
     }
 
@@ -55,6 +53,11 @@ void BikeRentalSystem::readBikesFromFile() {
 }
 
 void BikeRentalSystem::saveBikesToFile() const {
+    if (!std::__fs::filesystem::exists("DBS")) {
+        cerr << "Directory DBS does not exist. Creating directory.\n";
+        std::__fs::filesystem::create_directory("DBS");
+    }
+
     ofstream file("DBS/bikes.csv");
     if (!file.is_open()) {
         cerr << "Error opening file.\n";
@@ -92,7 +95,7 @@ Bike BikeRentalSystem::parseBike(const string &line) {
     bike.location = item;
 
     getline(ss, item, ',');
-    bike.available = stoi(item);
+    bike.available = item == "1";
 
     return bike;
 }
@@ -104,7 +107,7 @@ string BikeRentalSystem::bikeToString(const Bike &bike) {
            to_string(bike.year) + ',' +
            to_string(bike.price_per_hour) + ',' +
            bike.location + ',' +
-           to_string(bike.available);
+           (bike.available ? "1" : "0");
 }
 
 void BikeRentalSystem::addBike(const Bike &newBike) {
